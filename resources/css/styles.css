@@ -1,0 +1,238 @@
+html,
+body   {
+    font-size: 16px;
+   
+    margin: 0;
+    font-family: 'Roboto', Arial, sans-serif;
+}
+
+body {
+    background-color: #FBDBC1;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6,
+p
+ {
+    margin-left: 1rem;
+}
+
+/* NAV */
+
+ul {
+    height: 2.625rem;
+    display: flex;
+    align-items: end;
+    justify-content: space-around;
+    width: 500px;
+    margin: 0;
+    padding-left: 0;
+}
+
+header,
+footer {
+    height: 3.125rem;
+    width: 100%;
+    background-color: #6373B6;
+}
+
+
+nav ul {
+    list-style-type: none;
+}
+
+nav a {
+    text-decoration: none;
+    color:#FBDBC1;
+    font-weight: 300;
+}
+
+/* BANNER */
+
+.banner {
+    height: 35rem;
+    display: flex;
+    align-items: center;
+   
+}
+
+h1 {
+    color: hsl(23, 100%, 80%);
+    height: 6rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+/* PRESENTATION */
+
+h2, p {
+    color: #0b4d09;
+}
+
+.presentation p {
+    color: rgb(111, 77, 77);
+}
+
+.images {
+    display: flex;
+    justify-content: space-around;
+    margin: 5rem auto;
+}
+
+.image {
+    width: 30%;
+    overflow: hidden;
+}
+
+.image img {
+    width: 100%;
+}
+
+@media only screen and (max-width: 1048px) {
+    .images {
+        flex-direction: column;
+    } 
+   
+    .image {
+        width: 100%;
+        margin: 1rem auto;
+    
+    }
+
+    
+}
+
+
+
+/* QUOTE */
+
+.quote {
+    background-color: #6373B6 ;
+    height: 20rem;
+}
+
+.quote h2 {
+    font-size: 2.5rem;
+    font-weight: 500;
+    padding-top: 2rem;
+}
+
+/* OUTRO */
+
+.outro {
+    text-align: center;
+}
+
+.image-two {
+    width: 50%;
+    overflow: hidden;
+}
+
+.image-two img {
+    width: 100%;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+.outro h2 {
+    font-size: 2rem;
+    font-weight: 500;
+    
+}
+
+@media only screen and (max-width: 768px) {
+    .image-two {
+        width: 80%;
+       
+    }
+
+    .banner {
+        height: 15rem;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+    h2 {
+        font-size: 2.5rem;
+    }
+
+    p {
+        font-size: 1.5rem;
+    }
+
+    nav a {
+        font-size: 1.5rem;
+        font-weight: 400;
+    }
+
+    ul {
+        width: 100%;
+    }
+
+    .outro h2 {
+        font-size: 2.5rem;
+        font-weight: 600;
+    }
+}
+
+@media only screen and (max-width: 568px) {
+    .image-two {
+        width: 90%;
+        
+    }
+
+    header,
+    footer {
+    height: 5rem;
+    
+}
+    ul {
+        height: 4rem;
+    }
+
+    .banner {
+        height: 7.5rem;
+    }
+
+    h1 {
+        height: 8rem;
+        text-align: center;
+    }
+    
+    .outro h2 {
+        font-size: 2rem;
+        margin-left: 0;
+    }
+
+    .image {
+     
+        margin: 0.25rem auto;
+    
+    }    
+
+    .quote {
+     
+        height: 25rem;
+    }
+
+    .quote h2 {
+        font-size: 2rem;
+        padding-top: 1rem;
+    }
+
+    .images {
+        margin: 1rem auto;
+    }
+}
